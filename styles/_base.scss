@@ -1,0 +1,21 @@
+//Colores y fuentes
+$bgInfo:#FFFFFF;
+$titleInfo:#2ab2af;
+$subTitleInfo:#c0df34;
+$colorTxt:#C7CBD7;
+$colorList:#9CE9E9;
+$bgSub:#2ab2af;
+$colorTxtSubtitles:#FFFFFF;
+$btnSign:#c0df34;
+$bgWhyUs:#4ABEBD;
+$font:"Karla", sans-serif;
+
+//Fuente Principal
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+//Mixin de media query
+@mixin breakpoint(){
+    @media screen and (max-width:376px) {
+        @content
+    }
+}

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: hsl(204, 43%, 93%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+}
+@media screen and (max-width: 376px) {
+  main {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.prices__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50vw;
+}
+@media screen and (max-width: 376px) {
+  .prices__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100vw;
+  }
+}
+.prices__container .prices__info {
+  grid-column: 1/3;
+  background-color: #FFFFFF;
+  padding: 3rem;
+  border-radius: 20px 20px 0 0;
+}
+@media screen and (max-width: 376px) {
+  .prices__container .prices__info {
+    grid-column: 1;
+    border-radius: 0;
+  }
+}
+.prices__container .prices__info > h1 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #2ab2af;
+  font-weight: 700;
+}
+.prices__container .prices__info > h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #c0df34;
+}
+.prices__container .prices__info > p {
+  color: #C7CBD7;
+  font-weight: 700;
+}
+.prices__container .prices__subs {
+  background-color: #2ab2af;
+  padding: 0 3rem;
+  border-radius: 0 0 0 20px;
+}
+@media screen and (max-width: 376px) {
+  .prices__container .prices__subs {
+    border-radius: 0;
+    align-content: center;
+  }
+}
+.prices__container .prices__subs > h2 {
+  margin: 1.5rem 0;
+  color: #FFFFFF;
+}
+.prices__container .prices__subs #price {
+  margin-bottom: 1rem;
+  color: #9CE9E9;
+  font-weight: 400;
+}
+.prices__container .prices__subs #price > b {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #FFFFFF;
+}
+.prices__container .prices__subs #access {
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+.prices__container .prices__subs .btn__signUp {
+  margin-bottom: 3rem;
+  text-align: center;
+  align-content: center;
+  background-color: #c0df34;
+  height: 50px;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 376px) {
+  .prices__container .prices__subs .btn__signUp {
+    margin-bottom: 0;
+  }
+}
+.prices__container .prices__whyUs {
+  background-color: #4ABEBD;
+  padding: 0 3rem;
+  border-radius: 0 0 20px 0;
+}
+@media screen and (max-width: 376px) {
+  .prices__container .prices__whyUs {
+    border-radius: 0;
+  }
+}
+.prices__container .prices__whyUs > h2 {
+  margin: 1.5rem 0;
+  color: #FFFFFF;
+}
+.prices__container .prices__whyUs > ul > li {
+  list-style: none;
+  margin-bottom: 0.3rem;
+  color: #9CE9E9;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
